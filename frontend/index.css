@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Sinhala:wght@100;600&display=swap');
+            
+
+body{
+    font-family: 'Noto Sans Sinhala', sans-serif;
+}
+
+h1 {
+    color: blueviolet;
+    margin-left: 5%;
+}
+
+h3 {
+    color: rgb(92, 9, 170);
+    margin-left: 5%;
+}
