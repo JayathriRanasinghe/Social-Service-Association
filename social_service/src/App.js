@@ -24,6 +24,7 @@ function App() {
 					<NavDropdown.Item href="#">නව සාමාජික ලියාපදිංචිය</NavDropdown.Item>
 					<NavDropdown.Item href="#"> යාවත්කාලින කිරීමට</NavDropdown.Item>
 				</NavDropdown>		
+				<Nav.Link href='monthly_fee'>මරණාධාර</Nav.Link>			
 				<Nav.Link href='funerals'>මරණාධාර</Nav.Link>			
 				<NavDropdown title="ආදායම්">
 					<NavDropdown.Item href="#">කාර්යාල ගාස්තු</NavDropdown.Item>
