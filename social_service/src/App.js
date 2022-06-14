@@ -1,6 +1,9 @@
+import logo from './logo.svg';
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.css'
+import { Nav,Navbar,NavDropdown } from 'react-bootstrap'
 
-import { useState } from 'react';
+import React, { useState } from 'react';
 import ReactDOM from 'react-dom/client';
 
 function App() {
@@ -10,6 +13,29 @@ function App() {
 
   return (
     <div className="App">
+      <Navbar bg="dark" variant='dark' sticky='top' expand='lg' collapseOnSelect>
+		<Navbar.Brand>
+			<img src={logo} width='40px' height='40px'/>{''}
+		</Navbar.Brand>
+		<Navbar.Toggle />
+		<Navbar.Collapse>
+			<Nav>
+				<NavDropdown title="සාමාජිකත්වය">
+					<NavDropdown.Item href="#">නව සාමාජික ලියාපදිංචිය</NavDropdown.Item>
+					<NavDropdown.Item href="#"> යාවත්කාලින කිරීමට</NavDropdown.Item>
+				</NavDropdown>		
+				<Nav.Link href='funerals'>මරණාධාර</Nav.Link>			
+				<NavDropdown title="ආදායම්">
+					<NavDropdown.Item href="#">කාර්යාල ගාස්තු</NavDropdown.Item>
+					<NavDropdown.Item href="#">මඩු පුටු</NavDropdown.Item>
+				</NavDropdown>			
+				<Nav.Link href='member_details'>සාමජිකත්ව පරික්ෂාව</Nav.Link>			
+				<Nav.Link href='board_of'>නිලධාරී මණ්ඩලය</Nav.Link>			
+				<Nav.Link href='about_us'>අපි ගැන</Nav.Link>			
+			</Nav>
+		</Navbar.Collapse>
+
+	  </Navbar>
       <h1> උතුරු බටුවිට සමාජ සේවා සංගමය  </h1>
       <h3>මිනිසාගේ පරම යුතුකම මිනිසාට සේවය කිරීමයි </h3>
       
