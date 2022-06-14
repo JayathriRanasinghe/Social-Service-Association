@@ -42,7 +42,7 @@ function App() {
       <div className='loginDetails'>
         <form>
           <div>
-            <label>Username:</label>
+            <label>නම :</label>
               <input
                 type="text" 
                 value={name}
@@ -52,7 +52,7 @@ function App() {
           </div>
           
           <div>
-            <label>Password:</label>
+            <label>මුරපදය:</label>
               <input
                 type="password" 
                 value={password}
@@ -63,7 +63,7 @@ function App() {
 
           <div>
             
-            <input id='login_submit' type="submit" value={"Submit"}/>
+            <input id='login_submit' type="submit" value={"ඇතුලත් කරන්න"}/>
             
           </div>
           
