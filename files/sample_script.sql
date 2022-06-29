@@ -10,7 +10,8 @@ CREATE TABLE `Member` (
 
 CREATE TABLE `Incharge_board` (
   `Title_code` int,
-  `Member_id` int
+  `Member_id` int,
+  FOREIGN KEY (`Member_id`) REFERENCES `Member`(`Member_id`)
 );
 
 CREATE TABLE `Funeral` (
@@ -21,7 +22,8 @@ CREATE TABLE `Funeral` (
   `Date` date,
   `Amount` double,
   `Note` char(100),
-  PRIMARY KEY (`Money_passing_id`)
+  PRIMARY KEY (`Money_passing_id`),
+  FOREIGN KEY (`Member_id`) REFERENCES `Member`(`Member_id`)
 );
 
 CREATE TABLE `Income` (
